@@ -198,7 +198,7 @@ main {
   Card profile css
   -------------------------------------
 */
-.card .container-profile {
+.card .profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -223,8 +223,8 @@ main {
   }
 }
 
-.card#testimonial-1 .container-profile,
-.card#testimonial-4 .container-profile {
+.card#testimonial-1 .profile-container,
+.card#testimonial-4 .profile-container {
   & img {
     border: 2px solid var(--purple-300);
   }
@@ -237,10 +237,10 @@ main {
 
 /*
   -------------------------------------
-  Card body css
+  Card content css
   -------------------------------------
 */
-.card .container-body {
+.card .content-wrapper {
   & h2 {
     font-size: var(--font-size-xl);
     margin-block-end: var(--spacing-lg);
@@ -252,7 +252,7 @@ main {
 }
 /*
   -------------------------------------
-  Card body css end here
+  Card content css end here
   -------------------------------------
 */
 
