@@ -151,49 +151,6 @@ main {
   border-radius: var(--radius-lg);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-  & .container-profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: var(--spacing-md);
-    margin-block-end: var(--spacing-lg);
-
-    & img {
-      border-radius: var(--radius-full);
-      inline-size: 2.308rem;
-      block-size: 2.308rem;
-    }
-
-    & .user-info {
-      display: flex;
-      flex-direction: column;
-      row-gap: var(--spacing-xs);
-      font-size: var(--font-size-base);
-
-      & span:nth-child(2) {
-        font-size: var(--font-size-sm);
-      }
-    }
-  }
-
-  &#testimonial-1 .container-profile,
-  &#testimonial-4 .container-profile {
-    & img {
-      border: 2px solid var(--purple-300);
-    }
-  }
-
-  & .container-testimonial {
-    & h2 {
-      font-size: var(--font-size-xl);
-      margin-block-end: var(--spacing-lg);
-    }
-    & p {
-      font-size: var(--font-size-base);
-      line-height: 1.4;
-    }
-  }
-
   &#testimonial-1 {
     grid-column: 1 / span 2;
     background-color: var(--card1);
@@ -238,6 +195,69 @@ main {
 
 /*
   -------------------------------------
+  Card profile css
+  -------------------------------------
+*/
+.card .container-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: var(--spacing-md);
+  margin-block-end: var(--spacing-lg);
+
+  & img {
+    border-radius: var(--radius-full);
+    inline-size: 2.308rem;
+    block-size: 2.308rem;
+  }
+
+  & .user-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-xs);
+    font-size: var(--font-size-base);
+
+    & span:nth-child(2) {
+      font-size: var(--font-size-sm);
+    }
+  }
+}
+
+.card#testimonial-1 .container-profile,
+.card#testimonial-4 .container-profile {
+  & img {
+    border: 2px solid var(--purple-300);
+  }
+}
+/*
+  -------------------------------------
+  Card profile css end here
+  -------------------------------------
+*/
+
+/*
+  -------------------------------------
+  Card body css
+  -------------------------------------
+*/
+.card .container-body {
+  & h2 {
+    font-size: var(--font-size-xl);
+    margin-block-end: var(--spacing-lg);
+  }
+  & p {
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+  }
+}
+/*
+  -------------------------------------
+  Card body css end here
+  -------------------------------------
+*/
+
+/*
+  -------------------------------------
   Large device responsive
   -------------------------------------
 */
@@ -246,17 +266,37 @@ main {
     max-inline-size: 1024px;
   }
 
+  /*
+    -------------------------------------
+    Main css
+    -------------------------------------
+  */
   main {
     max-inline-size: 800px;
     grid-template-columns: repeat(3, 1fr);
   }
+  /*
+    -------------------------------------
+    Main css end here
+    -------------------------------------
+  */
 
+  /*
+    -------------------------------------
+    Card css 
+    -------------------------------------
+  */
   .card {
     &#testimonial-5 {
       grid-column: 1 / span 3;
       grid-row: 3;
     }
   }
+  /*
+    -------------------------------------
+    Card css end here
+    -------------------------------------
+  */
 }
 /*
   -------------------------------------
@@ -274,11 +314,26 @@ main {
     max-inline-size: 768px;
   }
 
+  /*
+    -------------------------------------
+    Main css
+    -------------------------------------
+  */
   main {
     max-inline-size: 600px;
     grid-template-columns: repeat(2, 1fr);
   }
+  /*
+    -------------------------------------
+    Main css end here
+    -------------------------------------
+  */
 
+  /*
+    -------------------------------------
+    Card css 
+    -------------------------------------
+  */
   .card {
     &#testimonial-1 {
       grid-column: 1 / span 2;
@@ -305,6 +360,11 @@ main {
       grid-row: 4;
     }
   }
+  /*
+    -------------------------------------
+    Card css end here 
+    -------------------------------------
+  */
 }
 /*
   -------------------------------------
@@ -322,11 +382,21 @@ main {
     max-inline-size: 600px;
   }
 
+  /*
+    -------------------------------------
+    Main css
+    -------------------------------------
+  */
   main {
     max-inline-size: 420px;
     display: flex;
     flex-direction: column;
   }
+  /*
+    -------------------------------------
+    Main css end here
+    -------------------------------------
+  */
 }
 /*
   -------------------------------------
